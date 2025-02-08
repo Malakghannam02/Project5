@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "5d7fc676-a97c-4360-a631-cc738800eb22",
+		"name": "reqres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788689"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\": \"zarqa\",\r\n    \"name\": \"malak\",\r\n    \"contactNumber\": \"0123456789\",\r\n    \"email\": \"example@domain.com\",\r\n    \"address\": \"123 street\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookshop/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookshop by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/bookshop/name/malak",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"name",
+						"malak"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookshop by email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/bookshop/email/example@domain.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"email",
+						"example@domain.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookshop by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/bookshop/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"lama\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookshop/newname/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"newname",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update email",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"email\":\"malak2@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookshop/newemail/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"newemail",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookshop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/bookshop/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookshop",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
